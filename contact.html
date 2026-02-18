@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHIL (FEI) HAN's Website</title>
+    <title>PHIL FEI HAN's Website</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header>
-    <div class="left">
-      <div class="logo"><h1>PHIL (FEI) HAN</h1></div>
-      <p class="subtitle">Product Manager, UIUX Designer and Developer</p>
-    </div>
+  <div class="left">
+    <div class="logo"><h1>PHIL FEI HAN</h1></div>
+    <p class="subtitle">Data Scientist | Business Analyst | Digital Innovator</p>
+  </div>
 
     <nav>
       <a href="index.html">Home</a>
@@ -27,25 +27,34 @@
     <section class="contact-info">
       <h2>CONTACT</h2>
       <div class="contact">
-        <strong>Email:</strong> feihan@dal.com <br>
+        <strong>Email:</strong> philfeihan@dal.com <br>
         <strong>Phone:</strong> +1 437-727-5775
       </div>
     </section>
 
-    <section class="map-container">
-      <h2>CONTACT ME</h2>
-      <form class="contact-form" action="send_mail.php" method="post">
-        <label for="name">Name</label>
-        <input id="name" type="text" name="name" required>
+<section class="contact-info">
+  <h2>MESSAGE ME</h2>
 
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email" required>
+    <form action="https://formspree.io/f/maqdbnpz" method="POST" class="contact-form">
+      <div class="form-group">
+        <label>Your Name:</label>
+        <input type="text" name="name" placeholder="Full name" required>
+      </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+      <div class="form-group">
+        <label>Your Email:</label>
+        <input type="email" name="email" placeholder="example@email.com" required>
+      </div>
 
-        <input type="submit" value="Submit">
-      </form>
+      <div class="form-group">
+        <label>Message:</label>
+        <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</section>
 
       <h2>MAP</h2>
       <iframe
