@@ -360,6 +360,36 @@ a {
   backdrop-filter:blur(6px);
   box-shadow:0 6px 30px rgba(100, 100, 100, 0.219);
 }
+/* 按钮容器（兜底居中） */
+.btn-container {
+    width: 100%;                /* 铺满card的宽度 */
+    padding: 20px 0 20px 0;        /* 仅顶部加30px间距，和文字拉开距离 */
+    display: flex;              /* flex强制居中核心 */
+    justify-content: center;    /* 水平居中（card内） */
+    align-items: center;        /* 垂直居中 */
+    margin: 0;                  /* 清除body的margin影响，仅跟着card走 */
+}
+
+/* 超大醒目GitHub按钮核心样式 */
+.github-big-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #24292f; /* GitHub经典黑 */
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+/* 鼠标悬浮动效，增强交互 */
+.github-big-btn:hover {
+    background-color: #0078ff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
 
 h1{font-size:48px;margin:0 0 0px;text-transform:uppercase}
 p.lead{margin:0 0 24px;color:var(--muted);font-size:16px}
@@ -388,6 +418,7 @@ p.lead{margin:0 0 24px;color:var(--muted);font-size:16px}
   display: inline-block;
   fill: currentColor; 
 }
+
 
 
 /* ========== Tablet, iPad ========== */
