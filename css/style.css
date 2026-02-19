@@ -221,23 +221,24 @@ li { margin-bottom: 8px; }
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
+  font-family: Arial, sans-serif; 
+  color: #333; 
   display: block;
   margin-bottom: 20px;
   resize: none;          
 }
 
-  .contact-form input[type="submit"] {
-    background: #3498db;
-    width: 300px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
-        display: block;        
-    margin: 0 auto 20px auto; 
-
-  }
+.contact-form input[type="submit"] {
+  background: #3498db;
+  width: 300px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: block;        
+  margin: 0 auto 20px auto; 
+}
 
   .contact-form input[type="submit"]:hover {
     background: #2980b9;
@@ -469,16 +470,21 @@ p.lead{margin:0 0 24px;color:var(--muted);font-size:16px}
   body {
     padding: 70px 15px 80px 15px;
   }
-
   header {
-    flex-direction: column;           
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;             
-    flex-wrap: nowrap;            
+    flex-direction: column;           /* 纵向排列标题和导航 */
+    justify-content: center;          /* 垂直居中 */
+    align-items: center;              /* 水平居中 */
+    text-align: center;               /* 文本居中兜底 */
     padding: 8px 10px;
     background-color: #ffffff;
   }
+
+  .left {
+    align-items: center;         
+    text-align: center;          
+    margin-bottom: 8px;               /* 和导航栏拉开一点间距 */
+  }
+
 
 
   .logo h1 {
@@ -560,16 +566,16 @@ p.lead{margin:0 0 24px;color:var(--muted);font-size:16px}
   }
   
   .line1  { font-size: 14px; margin-left: 0; margin-bottom: 4px; }
-  .line2  { font-size: 18px; margin-left: 55px; margin-bottom: 4px; }
+  .line2  { font-size: 18px; margin-left: 70px; margin-bottom: 4px; }
   .line3  { font-size: 12px; margin-left: 120px; margin-bottom: 0px; }
   .line4  { font-size: 16px; margin-left: 0; margin-bottom: 5px; }
-  .line5  { font-size: 18px; margin-left: 85px; margin-bottom: 5px; font-style: italic; }
-  .line6  { font-size: 12px; margin-left: 35px; margin-bottom: 8px; }
-  .line7  { font-size: 16px; margin-left: 10px; margin-bottom: 5px; font-style: italic; }
+  .line5  { font-size: 18px; margin-left: 95px; margin-bottom: 5px; font-style: italic; }
+  .line6  { font-size: 12px; margin-left: 15px; margin-bottom: 8px; }
+  .line7  { font-size: 16px; margin-left: 30px; margin-bottom: 5px; font-style: italic; }
   .line8  { font-size: 12px; margin-left: 0; margin-bottom: 5px; }
   .line9  { font-size: 16px; margin-left: 10px; margin-bottom: 8px; font-style: italic; }
   .line10 { font-size: 14px; margin-left: 120px; margin-bottom: 4px; }
-  .line11 { font-size: 18px; margin-left: 15px; margin-bottom: 4px; font-style: italic; }
+  .line11 { font-size: 18px; margin-left: 55px; margin-bottom: 4px; font-style: italic; }
   .line12 { font-size: 12px; margin-left: 0; margin-bottom: 4px; }
   
   .contact-form {
